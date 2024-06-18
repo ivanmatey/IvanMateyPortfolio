@@ -12,9 +12,8 @@
 }
 
 header{
-    border: 1px red solid;
     position: sticky;
-    // position: -webkit-sticky;
+    position: -webkit-sticky;
     z-index: 100;
 
     top: 0; /* required */
