@@ -2,64 +2,120 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-size: 13px;
+  overflow-y: hidden;
+  overflow-x: visible;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
-  width: 100vw;
+  background-color: #414548;
+  color: white;
 }
 
-header {
-  border: 1px red solid;
-  position: sticky;
-  z-index: 100;
-  top: 0; /* required */
+body {
+  padding: 1rem 1.5rem;
 }
 
 .navbar {
-  height: 60px;
-  background-color: #431A85;
+  display: flex;
+  justify-content: space-between;
+  border: 1px red solid;
 }
 
-.nav-links {
+.left-container {
   display: flex;
   align-items: center;
-  height: 100%;
-}
-.nav-links li {
-  display: flex;
-  justify-content: center;
-  height: 60%;
-}
-.nav-links li a {
-  width: 50%;
-  color: #FFFADE;
-  background-color: #BAA1D5;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
+  gap: 5px;
 }
 
 .logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../resources/PostBP7.jpg);
+  background-size: cover;
+}
+
+span {
+  line-height: 13px;
+}
+
+main {
+  border: 1px red solid;
+  padding: 1rem;
+}
+main .categoryNames {
+  display: flex;
+}
+main .categoryNames div {
+  width: 80px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+main .categoryNames div p {
+  font-size: 8px;
+}
+main .categories {
+  display: flex;
+}
+main .categories div {
   width: 80px;
   height: 80px;
-  border: 1px black solid;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+main .categories div:hover {
+  border: 2px #00c3e3 solid;
+}
+main .categories .whoami {
+  background-image: url(../resources/aboutme.png);
+  background-size: cover;
+}
+main .categories .projects {
+  background-image: url(../resources/projects.png);
+  background-size: cover;
+}
+main .categories .education {
+  background-image: url(../resources/education.png);
+  background-size: cover;
+}
+main .categories .resume {
+  background-image: url(../resources/resume.png);
+  background-size: cover;
+}
+main .categories .contactme {
+  background-image: url(../resources/contactme.png);
+  background-size: cover;
+}
+
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  border: 1px red solid;
+  padding-bottom: 10px;
+}
+.socialNetworks div {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  margin-right: 5px;
+}
+.socialNetworks div:hover {
+  border: 2px #00c3e3 solid;
+}
+.socialNetworks div a {
+  text-decoration: none;
+}
+.socialNetworks div a:visited {
+  color: black;
+}
+.socialNetworks div a i {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 490px;
-  left: 10px;
-  position: fixed;
-}
-.logo p {
-  display: flex;
-  justify-content: center;
-}
-
-.space {
-  width: 100vw;
-  height: 100vh;
+  background-color: #989898;
 }/*# sourceMappingURL=index.css.map */

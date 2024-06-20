@@ -5,46 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
     <title>Home Page</title>
+    <script
+      src="https://kit.fontawesome.com/f8be10a101.js/"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="whoami.html" target="_blank">Who am i?</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Interests</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </nav>
+    <header class="navbar">
+      <div class="logo"></div>
+      <!-- <div class="clock">CLOCK</div> -->
+      <div class="left-container">
+        <span id="time"></span>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
     </header>
 
     <main>
-      <h1>WELCOME</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-        provident quaerat nostrum, suscipit omnis repellat. Nobis temporibus
-        maxime dolores sint laborum at assumenda necessitatibus blanditiis
-        quibusdam, distinctio ullam reiciendis quae.
-      </p>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
-        temporibus ea. Corrupti animi maxime fugiat accusantium consectetur
-        labore amet vel, repellat veritatis dolorem, eos facilis id,
-        consequuntur deserunt architecto? Error?
-      </p>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
-        temporibus ea. Corrupti animi maxime fugiat accusantium consectetur
-        labore amet vel, repellat veritatis dolorem, eos facilis id,
-        consequuntur deserunt architecto? Error?
-      </p>
-      <div class="logo"><p>LOGO</p></div>
-      <div class="space"></div>
+      <div class="categoryNames">
+        <div class="whoamiName"><p>Who am I?</p></div>
+        <div class="projectsName"><p>Projects</p></div>
+        <div class="educationName"><p>Education</p></div>
+        <div class="resumeName"><p>Resume</p></div>
+        <div class="contactmeName"><p>Contact Me</p></div>
+      </div>
+      <div class="categories">
+        <div class="whoami"></div>
+        <div class="projects"></div>
+        <div class="education"></div>
+        <div class="resume"></div>
+        <div class="contactme"></div>
+      </div>
+      
     </main>
+
+    <section class="socialNetworks">
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/ivanmatey/" target="_blank"><i class="fa-brands fa-linkedin-in"
+          ></a
+        ></i>
+      </div>
+      <div class="github"><a href="https://github.com/ivanmatey" target="_blank"><i class="fa-brands fa-github"></i></a
+      ></i></div>
+      <div class="instagram"><a href="https://www.instagram.com/ivanmatey/" target="_blank"><i class="fa-brands fa-instagram"></i></a
+        ></i></div>
+      <div class="phone"></div>
+    </section>
+
+    <hr>
+
+    <!-- <div class="moving-text">Hover over this text to move it</div> -->
   </body>
+
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      // var seconds = now.getSeconds();
+
+      // Add a zero in front of numbers < 10
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      // seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      var timeString = hours + ":" + minutes;
+
+      document.getElementById("time").textContent = timeString;
+    }
+
+    // Initial call to display the time immediately
+    updateTime();
+
+    // Update the time every second
+    setInterval(updateTime, 1000);
+  </script>
 </html>
