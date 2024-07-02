@@ -43,6 +43,7 @@ main {
 .navbar a:hover {
   border-left: 5px #00c3e3 solid;
   color: #00c3e3;
+  transition: all 0.5s;
 }
 
 .mainContent {
