@@ -59,22 +59,21 @@ main{
     height: 450px;
     background-color: #636668;
     overflow: auto;
-    padding: 1rem;
+    padding: 1.5rem;
 
     .keyComp, .workExperience,h2,h3,ul,li{
     background-color: #636668;
     }
+    h2{
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 
 
     .keyComp{
-        // border: 1px red solid;
         margin-bottom: 15px;
-        h2{
-            font-weight: bolder;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
         ul{
             padding: 0 1.5rem;
             li{
@@ -85,12 +84,6 @@ main{
     .workExperience{
         margin: 15px 0px;
         background-color: #636668;
-        h2{
-            font-weight: bolder;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
         .title{
             display: flex;
             justify-content: space-between;

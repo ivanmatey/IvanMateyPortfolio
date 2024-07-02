@@ -78,9 +78,12 @@ main{
         }
         .myName:hover{
             color: #00c3e3;
-            // text-decoration: underline;
             transition: all 0.5s;
-            // transition: text-decoration 2s;
+        }
+
+        .study{
+            color: #ff4554;
+            font-weight: bolder;
         }
     
         p,h2,div{
@@ -114,6 +117,25 @@ main{
                     background-color: #636668;
                 }
             }
+
+            .js{
+                p:hover{
+                    color: #00c3e3;
+                    transition: all 0.5s;
+                }
+            }
+            .html{
+                p:hover{
+                    color: #00c3e3;
+                    transition: all 0.5s;
+                }
+            }
+            .css{
+                p:hover{
+                    color: #00c3e3;
+                    transition: all 0.5s;
+                }
+            }
         }
     }
     .myInterests{
@@ -145,6 +167,7 @@ main{
                 }
             }
             p{
+                padding: 0 0.5rem;
                 background-color: #636668;
             }
         }
@@ -161,6 +184,7 @@ main{
                 }
             }
             p{
+                padding: 0 0.5rem;
                 background-color: #636668;
             }
         }

@@ -71,6 +71,10 @@ main {
   color: #00c3e3;
   transition: all 0.5s;
 }
+.mainContent .aboutme .study {
+  color: #ff4554;
+  font-weight: bolder;
+}
 .mainContent .aboutme p, .mainContent .aboutme h2, .mainContent .aboutme div {
   background-color: #636668;
 }
@@ -98,6 +102,18 @@ main {
 }
 .mainContent .skillSet .skills .js i, .mainContent .skillSet .skills .js p, .mainContent .skillSet .skills .html i, .mainContent .skillSet .skills .html p, .mainContent .skillSet .skills .css i, .mainContent .skillSet .skills .css p {
   background-color: #636668;
+}
+.mainContent .skillSet .skills .js p:hover {
+  color: #00c3e3;
+  transition: all 0.5s;
+}
+.mainContent .skillSet .skills .html p:hover {
+  color: #00c3e3;
+  transition: all 0.5s;
+}
+.mainContent .skillSet .skills .css p:hover {
+  color: #00c3e3;
+  transition: all 0.5s;
 }
 .mainContent .myInterests {
   background-color: #636668;
@@ -130,6 +146,7 @@ main {
   width: 400px;
 }
 .mainContent .myInterests .edm p {
+  padding: 0 0.5rem;
   background-color: #636668;
 }
 .mainContent .myInterests .videogame {
@@ -145,6 +162,7 @@ main {
   width: 400px;
 }
 .mainContent .myInterests .videogame p {
+  padding: 0 0.5rem;
   background-color: #636668;
 }
 

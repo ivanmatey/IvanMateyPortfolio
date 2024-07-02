@@ -52,19 +52,19 @@ main {
   height: 450px;
   background-color: #636668;
   overflow: auto;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .mainContent .keyComp, .mainContent .workExperience, .mainContent h2, .mainContent h3, .mainContent ul, .mainContent li {
   background-color: #636668;
 }
-.mainContent .keyComp {
-  margin-bottom: 15px;
-}
-.mainContent .keyComp h2 {
+.mainContent h2 {
   font-weight: bolder;
   font-size: 1.5rem;
   margin-bottom: 15px;
   text-align: center;
+}
+.mainContent .keyComp {
+  margin-bottom: 15px;
 }
 .mainContent .keyComp ul {
   padding: 0 1.5rem;
@@ -75,12 +75,6 @@ main {
 .mainContent .workExperience {
   margin: 15px 0px;
   background-color: #636668;
-}
-.mainContent .workExperience h2 {
-  font-weight: bolder;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  text-align: center;
 }
 .mainContent .workExperience .title {
   display: flex;
