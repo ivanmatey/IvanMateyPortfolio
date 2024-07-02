@@ -1,5 +1,5 @@
 //ALL
-$fontsize : 40px;
+$fontsize : 30px;
 $fontcolor: white;
 *{
     margin: 0px;
@@ -71,12 +71,13 @@ main{
         // border: 1px red solid;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
         text-decoration: none;
         padding: 0.2rem 0.7rem;
         background-color: #636668;
             i,p{
                 background-color: #636668;
+                font-size: 0.85rem;
             }
         &:hover{
             color:#0077b5 ;
@@ -97,6 +98,7 @@ main{
             margin: 10px 0px;
             display: flex;
             align-items: center;
+            justify-content: center;
             // border: 1px red solid;
             gap: 20px;
         }
