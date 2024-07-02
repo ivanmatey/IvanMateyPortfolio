@@ -217,15 +217,6 @@ main .contentContainer .content .cardContent .progressImg img {
   background-color: #989898;
 }
 
-#whoamiContent:target, #projectsContent:target, #educationContent:target, #resumeContent:target, #contactmeContent:target {
-  display: block;
-}
-
-.close {
-  display: block;
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 600px) {
   * {
     font-size: 20px;
