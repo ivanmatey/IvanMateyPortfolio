@@ -51,24 +51,56 @@ main {
   width: 100%;
   height: 450px;
   background-color: #636668;
+  overflow: auto;
+  padding: 1rem;
 }
-.mainContent p {
+.mainContent .keyComp, .mainContent .workExperience, .mainContent h2, .mainContent h3, .mainContent ul, .mainContent li {
+  background-color: #636668;
+}
+.mainContent .keyComp {
+  margin-bottom: 15px;
+}
+.mainContent .keyComp h2 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
   text-align: center;
-  background-color: #636668;
-  margin: 10px;
 }
-.mainContent .progressImg {
+.mainContent .keyComp ul {
+  padding: 0 1.5rem;
+}
+.mainContent .keyComp ul li {
+  list-style-type: disc;
+}
+.mainContent .workExperience {
+  margin: 15px 0px;
   background-color: #636668;
+}
+.mainContent .workExperience h2 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.mainContent .workExperience .title {
   display: flex;
-  justify-content: center;
-  height: 300px;
-  align-items: center;
-  margin-top: 20px;
-}
-.mainContent .progressImg img {
+  justify-content: space-between;
   background-color: #636668;
-  width: 250px;
-  height: 250px;
+  margin: 10px 0;
+}
+.mainContent .workExperience h3 {
+  margin: 10px 0;
+  font-weight: bolder;
+}
+.mainContent .workExperience .scale, .mainContent .workExperience .marcha, .mainContent .workExperience .hrae {
+  background-color: #636668;
+}
+.mainContent .workExperience ul {
+  padding: 0 1.5rem;
+}
+.mainContent .workExperience ul li {
+  list-style-type: disc;
+  margin: 10px 0;
 }
 
 footer {
