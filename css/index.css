@@ -2,9 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-size: 13px;
-  overflow-y: hidden;
-  overflow-x: visible;
+  font-size: 40px;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 350;
@@ -20,18 +18,27 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  border: 1px red solid;
 }
 
 .left-container {
   display: flex;
   align-items: center;
-  gap: 5px;
+}
+.left-container p {
+  margin-left: 1.5vw;
+  width: 100%;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .logo {
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-image: url(../resources/PostBP7.jpg);
   background-size: cover;
@@ -42,69 +49,158 @@ span {
 }
 
 main {
-  border: 1px red solid;
-  padding: 1rem;
+  padding: 1rem 0.8rem;
 }
-main .categoryNames {
+main .bigcontainer {
+  width: 100%;
+  height: 400px;
+  position: relative;
   display: flex;
+  gap: 0px 1vw;
 }
-main .categoryNames div {
-  width: 80px;
-  margin-right: 10px;
+main .bigcontainer .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  transition: 1.5s all;
 }
-main .categoryNames div p {
-  font-size: 8px;
+main .bigcontainer .container .categoryName {
+  width: 85%;
+  opacity: 0;
 }
-main .categories {
-  display: flex;
+main .bigcontainer .container a:not(.close) {
+  width: 100%;
+  margin-top: 0.8vw;
 }
-main .categories div {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-  margin-top: 3px;
+main .bigcontainer .container a:not(.close):hover {
+  outline: 5px #00c3e3 solid;
+  transition: outline 0.3s;
 }
-main .categories div:hover {
-  border: 2px #00c3e3 solid;
+main .bigcontainer .container:hover .categoryName {
+  opacity: 1;
+  color: #00c3e3;
+  animation-name: movingText;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-main .categories .whoami {
+@keyframes movingText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+main .bigcontainer .container .whoami {
   background-image: url(../resources/aboutme.png);
   background-size: cover;
+  aspect-ratio: 1/1;
+  max-inline-size: 100%;
+  block-size: auto;
 }
-main .categories .projects {
+main .bigcontainer .container .projects {
   background-image: url(../resources/projects.png);
   background-size: cover;
+  aspect-ratio: 1/1;
+  max-inline-size: 100%;
+  block-size: auto;
 }
-main .categories .education {
+main .bigcontainer .container .education {
   background-image: url(../resources/education.png);
   background-size: cover;
+  aspect-ratio: 1/1;
+  max-inline-size: 100%;
+  block-size: auto;
 }
-main .categories .resume {
+main .bigcontainer .container .resume {
   background-image: url(../resources/resume.png);
   background-size: cover;
+  aspect-ratio: 1/1;
+  max-inline-size: 100%;
+  block-size: auto;
 }
-main .categories .contactme {
+main .bigcontainer .container .contactme {
   background-image: url(../resources/contactme.png);
   background-size: cover;
+  aspect-ratio: 1/1;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+main .contentContainer {
+  display: none;
+}
+main .contentContainer .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+  border-radius: 15px;
+  background-color: #989898;
+}
+main .contentContainer .content .cardHead {
+  position: sticky;
+  background-color: #989898;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+main .contentContainer .content .cardHead p {
+  background-color: #989898;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+main .contentContainer .content .cardHead a {
+  background-color: #989898;
+}
+main .contentContainer .content .cardHead i {
+  background-color: #989898;
+}
+main .contentContainer .content .cardContent {
+  width: 100%;
+  height: 85%;
+  background-color: #989898;
+}
+main .contentContainer .content .cardContent p, main .contentContainer .content .cardContent .blue {
+  background-color: #989898;
+}
+main .contentContainer .content .cardContent .blue {
+  color: #ff4554;
+  font-weight: bolder;
+}
+main .contentContainer .content .cardContent .progressImg {
+  width: 100%;
+  height: 80%;
+  background-color: #989898;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contentContainer .content .cardContent .progressImg img {
+  background-color: #989898;
+  width: 200px;
+  height: 200px;
 }
 
 .socialNetworks {
   display: flex;
   justify-content: center;
-  margin-top: 0.5rem;
-  border: 1px red solid;
+  margin-top: 1rem;
   padding-bottom: 10px;
 }
 .socialNetworks div {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 0.2rem;
 }
 .socialNetworks div:hover {
-  border: 2px #00c3e3 solid;
+  outline: 5px #00c3e3 solid;
+  transition: outline 0.3s;
 }
 .socialNetworks div a {
   text-decoration: none;
@@ -114,8 +210,95 @@ main .categories .contactme {
 }
 .socialNetworks div a i {
   height: 100%;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #989898;
+}
+
+#whoamiContent:target, #projectsContent:target, #educationContent:target, #resumeContent:target, #contactmeContent:target {
+  display: block;
+}
+
+.close {
+  display: block;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 20px;
+  }
+  body {
+    padding: 0.5rem 0.75rem;
+  }
+  .navbar {
+    flex-direction: column-reverse;
+    gap: 5px;
+    margin-bottom: 1rem;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .left-container {
+    gap: 20px;
+  }
+  .left-container p {
+    font-size: 30px;
+    margin-left: 2vw;
+    width: 100%;
+  }
+  .right-container {
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .right-container span {
+    flex-grow: 2;
+  }
+  main {
+    padding: 0;
+  }
+  main .bigcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main .bigcontainer .container {
+    width: 100%;
+    gap: 10px;
+  }
+  main .bigcontainer .container .categoryName {
+    opacity: 1;
+  }
+  main .bigcontainer .container:hover .categoryName {
+    animation-play-state: paused;
+    color: white;
+  }
+  main .bigcontainer .container a:not(.close) {
+    width: 100%;
+    margin-top: 0.8vw;
+  }
+  main .bigcontainer .container a:not(.close):hover {
+    border: 5px #00c3e3 solid;
+  }
+  main .contentContainer {
+    display: none;
+  }
+  main .contentContainer .content {
+    padding: 0.2rem;
+    top: auto;
+  }
+  .socialNetworks {
+    justify-content: space-between;
+  }
+  .socialNetworks div {
+    width: 50px;
+    height: 50px;
+  }
+  .socialNetworks div i {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=index.css.map */
