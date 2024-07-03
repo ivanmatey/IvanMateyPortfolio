@@ -28,10 +28,15 @@ body{
     display: flex;
     // border: 1px red solid;
     align-items: center;
+    
     p{
         // border: 1px red solid;
         margin-left: 1.5vw;
         width: 100%;
+        &:hover{
+            color: #00c3e3;
+            transition: all 0.5s;
+        }
     }
 }
 .right-container{

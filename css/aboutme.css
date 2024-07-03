@@ -71,7 +71,11 @@ main {
   color: #00c3e3;
   transition: all 0.5s;
 }
-.mainContent .aboutme .study {
+.mainContent .aboutme .study1 {
+  color: #ff4554;
+  font-weight: bolder;
+}
+.mainContent .aboutme .study2 {
   color: #ff4554;
   font-weight: bolder;
 }
